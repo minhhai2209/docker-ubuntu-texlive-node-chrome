@@ -12,7 +12,7 @@ RUN apt install -y curl \
   && rm -rf /var/lib/apt/lists/*
 
 RUN wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb \
-  && dpkg -i google-chrome-stable_current_amd64.deb
-  && apt íntall -f -y
-  && rm -rf google-chrome-stable_current_amd64.deb
+  && dpkg -i google-chrome-stable_current_amd64.deb \
+  && apt íntall -f -y \
+  && rm -rf google-chrome-stable_current_amd64.deb \
   && rm -rf /var/lib/apt/lists/*
