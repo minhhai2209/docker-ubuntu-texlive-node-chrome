@@ -6,8 +6,7 @@ RUN apt update && apt install -y \
   texlive-full \
   && rm -rf /var/lib/apt/lists/*
   
-RUN apt install -y curl \
-  && curl -fsSL https://deb.nodesource.com/setup_lts.x | sudo -E bash - \
+RUN curl -fsSL https://deb.nodesource.com/setup_lts.x | sudo -E bash - \
   && apt install -y nodejs \
   && rm -rf /var/lib/apt/lists/*
 
