@@ -7,7 +7,6 @@ RUN apt update \
   && curl -fsSL https://deb.nodesource.com/setup_lts.x | bash - \
   && apt install -y nodejs \
   && wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb \
-  && dpkg -i google-chrome-stable_current_amd64.deb \
-  && apt install -f -y \
+  && apt install -y google-chrome-stable_current_amd64.deb \
   && rm -rf google-chrome-stable_current_amd64.deb \
   && rm -rf /var/lib/apt/lists/*
