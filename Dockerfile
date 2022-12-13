@@ -1,9 +1,8 @@
-FROM ubuntu:20.04
+FROM minhhai2209/docker-ubuntu-texlive:v0.0.1
 
 ARG DEBIAN_FRONTEND=noninteractive
 
 RUN apt update \
-  && apt install -y texlive-full \
   && apt install -y curl wget \
   && curl -fsSL https://deb.nodesource.com/setup_lts.x | bash - \
   && apt install -y nodejs \
