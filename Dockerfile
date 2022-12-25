@@ -1,4 +1,4 @@
-FROM minhhai2209/docker-ubuntu-texlive:v0.0.1
+FROM minhhai2209/docker-ubuntu-texlive:v0.0.2
 
 ARG DEBIAN_FRONTEND=noninteractive
 
